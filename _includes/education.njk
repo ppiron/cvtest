@@ -1,0 +1,11 @@
+<section id="education">
+  <h1 class="education__title">Education</h1>
+
+  {% for dipl in collections.edu %}
+
+  <div class="education__title">{{ dipl.data.diploma }}</div>
+  <div class="experience__school">{{ dipl.data.school }}</div>
+  {{ dipl.templateContent | safe }}
+
+  {% endfor %}
+</section>

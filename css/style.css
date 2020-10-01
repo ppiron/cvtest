@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+.img_container {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(255,255,255,0.50196)
+}
+
+.img_container img {
+    width: 100%;
+  }
+
+header {
+  width: 370px;
+  background-color: #bd5d38;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  margin-top: 16px;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.50196)
+}
+
+nav a:hover {
+    color: rgba(255,255,255,0.66667);
+  }
+
+nav a.active {
+    color: white;
+  }
+
+#about,
+#experience,
+#education,
+#skills {
+  margin-left: 370px;
+  padding-left: 32px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 48px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.icon svg {
+    fill: #495057
+  }
+
+.icon svg:hover {
+      fill: #bd5d38;
+    }
+
+.icon {
+  cursor: pointer;
+  margin-right: 24px;
+}

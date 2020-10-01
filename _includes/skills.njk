@@ -1,0 +1,10 @@
+<section id="skills">
+  <h1 class="skills__title">Skills</h1>
+
+  {% for skill in collections.skills %}
+
+  <div class="experience__title">{{ skill.data.skilltype }}</div>
+  {{ skill.templateContent | safe }}
+
+  {% endfor %}
+</section>
