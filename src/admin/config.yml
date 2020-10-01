@@ -5,14 +5,16 @@ backend:
 
 local_backend: true
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
-media_folder: "img/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+
+display_url: http://localhost:8080
 
 collections:
   - name: "experience" # Used in routes, e.g., /admin/collections/experience
     label: "Experience" # Used in the UI
-    folder: "/experience"
+    folder: "src/experience"
     create: true # Allow users to create new documents in this collection
     # slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
