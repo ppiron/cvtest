@@ -1,6 +1,6 @@
 ---
-jobtitle: Pippo prendi.
-company: Poro'endi.
+jobtitle: Pippo prendi
+company: Poro'endi
 startdate: 2018-05-01
 enddate: present
 tags:
