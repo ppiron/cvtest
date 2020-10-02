@@ -3,6 +3,11 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -23,7 +28,7 @@ body {
 }
 
 header {
-  width: 370px;
+  width: 270px;
   background-color: #bd5d38;
   height: 100vh;
   position: fixed;
@@ -62,15 +67,19 @@ nav a {
 #experience,
 #education,
 #skills {
-  margin-left: 370px;
-  padding-left: 32px;
+  margin-left: 270px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.social-icons {
+.social-icons,
+.skills-icons {
   display: flex;
   margin-top: 48px;
 }
@@ -86,4 +95,89 @@ nav a {
   }
   cursor: pointer;
   margin-right: 24px;
+}
+
+.about__name {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #495057;
+  font-stretch: semi-condensed;
+  & .pippo {
+    color: #bd5d38;
+  }
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.about__address {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-stretch: semi-condensed;
+  text-transform: uppercase;
+  color: #495057;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.about__email {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-stretch: semi-condensed;
+  text-transform: uppercase;
+  color: #bd5d38;
+  display: inline-block;
+}
+
+.about__text,
+.experience__text {
+  color: #6c757d;
+}
+
+.about__text {
+  font-size: 18px;
+}
+
+.experience__heading {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #495057;
+  font-stretch: semi-condensed;
+  margin: 0;
+}
+
+.experience__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.experience__title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #495057;
+  font-stretch: semi-condensed;
+}
+
+.experience__company {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #6c757d;
+  font-stretch: semi-condensed;
+}
+
+.experience__right {
+  color: #bd5d38;
+  flex-shrink: 0;
 }
