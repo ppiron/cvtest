@@ -1,5 +1,5 @@
 ---
-diploma: BSc. Physics.
+title: BSc. Physics.
 school: University of Bologna.
 startdate: October 1989
 enddate: March 1995

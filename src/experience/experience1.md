@@ -1,5 +1,5 @@
 ---
-jobtitle: Pippo prendi
+title: Pippo prendi
 company: Poro'endi
 startdate: 2018-05-01
 enddate: present

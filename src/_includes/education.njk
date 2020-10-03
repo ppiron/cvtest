@@ -3,7 +3,7 @@
 
   {% for dipl in collections.edu %}
 
-  <div class="education__title">{{ dipl.data.diploma }}</div>
+  <div class="education__title">{{ dipl.data.title }}</div>
   <div class="experience__school">{{ dipl.data.school }}</div>
   {{ dipl.templateContent | safe }}
 

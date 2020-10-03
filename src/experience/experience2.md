@@ -1,5 +1,5 @@
 ---
-jobtitle: Stracciapalle
+title: Stracciapalle
 company: Mr. Straccia
 startdate: 2017-01-01
 enddate: 2018-04-30
