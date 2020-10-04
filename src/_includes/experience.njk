@@ -5,7 +5,7 @@
 
   <div class="experience__content">
     <div class="experience__left">
-      <div class="experience__title">{{ job.data.jobtitle }}</div>
+      <div class="experience__title">{{ job.data.title }}</div>
       <div class="experience__company">{{ job.data.company }}</div>
       <div class="experience__text">{{ job.templateContent | safe }}</div>
     </div>
@@ -13,6 +13,9 @@
       {{ job.data.startdate | makeDate }} - {{ job.data.enddate | makeDate }}
     </div>
   </div>
-
-  {% endfor %}
+  {% if job.data.thumbnail %}
+  <div class="experience__image">
+    <img src="{{ job.data.thumbnail }}" alt="" />
+  </div>
+  {% endif %} {% endfor %}
 </section>

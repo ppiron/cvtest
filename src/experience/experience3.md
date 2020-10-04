@@ -3,6 +3,7 @@ title: Cagare
 company: Water
 startdate: 2016-01-01
 enddate: 2017-01-31
+thumbnail: ""
 tags:
   - jobs
 ---
