@@ -79,12 +79,26 @@ nav a.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 1px solid rgba(108,117,125,0.31373);
 }
 
 .social-icons,
 .skills-icons {
   display: flex;
   margin-top: 48px;
+}
+
+svg {
+  fill: #495057;
+}
+
+svg:hover {
+    fill: #bd5d38;
+  }
+
+svg {
+  cursor: pointer;
+  /* margin-right: 24px; */
 }
 
 .icon {
@@ -147,7 +161,9 @@ nav a.active {
 }
 
 .about__text,
-.experience__text {
+.experience__text,
+.education__text,
+.skills__text {
   color: #6c757d;
 }
 
@@ -155,7 +171,9 @@ nav a.active {
   font-size: 18px;
 }
 
-.experience__heading {
+.experience__heading,
+.education__heading,
+.skills__heading {
   font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -165,13 +183,20 @@ nav a.active {
   margin: 0;
 }
 
-.experience__content {
+.experience__content,
+.education__content {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
 }
 
-.experience__title {
+.skills__content {
+  margin-top: 4rem;
+}
+
+.experience__title,
+.education__title,
+.skills__title {
   font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -180,7 +205,8 @@ nav a.active {
   font-stretch: semi-condensed;
 }
 
-.experience__company {
+.experience__company,
+.education__school {
   font-family: "Saira Extra Condensed", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -189,7 +215,17 @@ nav a.active {
   font-stretch: semi-condensed;
 }
 
-.experience__right {
+.experience__right,
+.education__right {
   color: #bd5d38;
   flex-shrink: 0;
 }
+
+.experience__image,
+.education__image {
+  max-width: 30%
+}
+
+.experience__image img, .education__image img {
+    width: 100%;
+  }
