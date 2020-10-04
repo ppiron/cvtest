@@ -1,10 +1,22 @@
 <section id="skills">
-  <h1 class="skills__title">Skills</h1>
+  <h1 class="skills__heading">Skills</h1>
 
   {% for skill in collections.skills %}
 
-  <div class="experience__title">{{ skill.data.skilltype }}</div>
-  {{ skill.templateContent | safe }}
-
-  {% endfor %}
+  <div class="skills__content">
+    <div class="skills__title">{{ skill.data.skilltype }}</div>
+    <div class="skills__text">
+      {{ skill.templateContent | safe }}
+    </div>
+  </div>
+  
+  {% if skill.data.thumbnails %}
+  <div class="skills-icons">
+    {% for thumbnail in skill.data.thumbnails %}
+    <div class="icon">
+      <object data="{{ thumbnail }}" type="image/svg+xml"></object>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %} {% endfor %}
 </section>
