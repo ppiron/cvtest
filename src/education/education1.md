@@ -5,6 +5,7 @@ startdate: October 1989
 enddate: March 1995
 tags:
   - edu
+thumbnail:
 ---
 
 Ho preso pippo.

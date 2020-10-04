@@ -1,11 +1,23 @@
 <section id="education">
-  <h1 class="education__title">Education</h1>
+  <h1 class="education__heading">Education</h1>
 
   {% for dipl in collections.edu %}
 
-  <div class="education__title">{{ dipl.data.title }}</div>
-  <div class="experience__school">{{ dipl.data.school }}</div>
-  {{ dipl.templateContent | safe }}
-
-  {% endfor %}
+  <div class="education__content">
+    <div class="education__left">
+      <div class="education__title">{{ dipl.data.title }}</div>
+      <div class="education__school">{{ dipl.data.school }}</div>
+      <div class="education__text">
+        {{ dipl.templateContent | safe }}
+      </div>
+    </div>
+    <div class="education__right">
+      {{ dipl.data.startdate | makeDate }} - {{ dipl.data.enddate | makeDate }}
+    </div>
+  </div>
+  {% if dipl.data.thumbnail %}
+  <div class="education__image">
+    <img src="{{ dipl.data.thumbnail }}" alt="" />
+  </div>
+  {% endif %} {% endfor %}
 </section>
