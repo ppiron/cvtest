@@ -1,0 +1,34 @@
+const fs = require("fs");
+
+class Test {
+  data() {
+    return {
+      title: "Ted",
+      skilltype: "teds-rad-layout",
+      thumbnails: ["/img/css-3.svg", "/img/html5.svg", "/img/javascript.svg"],
+      tags: ["skills"],
+    };
+  }
+
+  render(data) {
+    let thumbs = "";
+    if (data.thumbnails !== []) {
+      data.thumbnails.forEach((element) => {
+        thumbs =
+          thumbs +
+          `
+        <div class="icon">
+        ${fs.readFileSync(`./src${element}`, "utf8")}
+        </div>
+        `;
+      });
+    }
+    // console.log(thumbs);
+    return `
+        <p>${data.title}</p>
+        <div class="skills-icons">${thumbs}</div>
+        `;
+  }
+}
+
+module.exports = Test;
