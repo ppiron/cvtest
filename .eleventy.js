@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("makeDate", function (value) {
     if (typeof value === "string") {
@@ -19,6 +21,12 @@ module.exports = function (eleventyConfig) {
       11: "December",
     };
     return `${months[dat.getMonth()]}, ${dat.getFullYear()}`;
+  });
+
+  eleventyConfig.addFilter("makeSvg", function (value) {
+    return `<div class="icon">
+        ${fs.readFileSync(`./src${value}`, "utf8")}
+        </div>`;
   });
 
   eleventyConfig.addPassthroughCopy("src/img");

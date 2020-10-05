@@ -88,18 +88,13 @@ nav a.active {
   margin-top: 48px;
 }
 
-svg {
+/* svg {
   fill: #495057;
-}
-
-svg:hover {
+  &:hover {
     fill: #bd5d38;
   }
-
-svg {
   cursor: pointer;
-  /* margin-right: 24px; */
-}
+} */
 
 .icon {
   width: 48px;
